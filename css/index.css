@@ -10,8 +10,8 @@
 }
 
 .container {
-    width: 100%;
-    margin: 0 auto;
+    /* min-width: 100%; */
+    /* margin: 0 auto; */
 }
 
 /* =====================[ HEADER STYLES ]==================================================== */
@@ -341,7 +341,6 @@ header {
         font-size: 24px;
         font-weight: bold;
     }
-    
      
 }
 
@@ -350,7 +349,7 @@ header {
 
 .sign-Doc-con {
     background: #FFF;
-    max-height: 750px;
+    height: 800px;
     display: flex;
     justify-content: center;
     font-family: 'Nunito Sans', sans-serif;

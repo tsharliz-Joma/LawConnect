@@ -1,0 +1,419 @@
+
+/* Nunito Sans */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* =====================[ HEADER STYLES ]==================================================== */
+
+.hide-on-phone, .navbar {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    color: #FFF;
+    position: fixed;
+    top: 0;
+    padding: 15px 20px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 10px;
+}
+
+.login-button, .button-light, nav li {
+    cursor: pointer;
+}
+
+.login-button {
+    background:transparent;
+    border: none;
+    color: #FFF;
+}
+
+.button-light:hover{
+    background-color: #0A49AF;
+}
+
+.button-light {
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    background-color: #2ab7fd;
+    padding: 5px;
+    height: 40px;
+    width: 180px;
+    margin: 0 10px;
+    transition: ease-out 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button-light:hover{
+    transform: translateX(-1px)translateY(-1px)
+}
+
+#hide-on-desktop {
+    display: none;
+}
+/* ==========[ HEADER MEDIA QUERIES ]=============== */
+
+@media only screen and (max-width: 500px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        padding: 20px 20px;
+        background: rgba(14,95,227,1);
+    }
+
+    .navbar img {
+        width: 200px;
+        
+    }
+
+    ion-icon {
+        color: #FFF;
+        font-size: 36px;
+    }
+    .ion-icon-container {
+        height: 30px;
+    }
+}
+
+header {
+    background: linear-gradient(0deg, #0A49AF 0%, #0E5FE3 100%)0% 0% no-repeat padding-box;
+    min-height: 651px;
+    padding: 10px 0;   
+}
+
+.background-icon {
+    display: flex;
+    min-height: 651px;
+    justify-content: end;
+    background-image: url('./assets/logos/LawConnect-lcon-RGB.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.header-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 80px;
+    font-family: 'Nunito Sans', sans-serif;
+    color:#FFF;
+}
+
+.header-text-heading {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.header-inner-left-div {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    margin: 0 60px 0 -30px;
+    padding: 0 50px;
+}
+
+
+.header-inner-left-div button{
+    margin-top: 40px;
+    margin-left: -5px;
+}   
+
+/* ==========[ HEADER STYLES ]=============== */
+
+@media screen and (max-width: 500px){
+    .header-display {
+        /* margin-top: 10px; */
+        height: 100vh;
+    }
+    .header-container{
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+
+
+    .header-inner-left-div{
+        margin: 0;
+        padding: 0 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .header-inner-left-div p{
+        line-height: 22px;
+    }
+
+    .button-light{
+        text-align: center;
+        width: 100%;
+        height: 60px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .header-inner-left-div button{
+        margin: 40px 0;
+    }
+    .hide-on-phone-default{
+        display: none;
+    }
+
+}
+
+/* =====================[ SOLUTIONS SECTION STYLES ]==================================================== */
+
+.solutions-outer-container {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif; /* FONT */
+}
+
+.solutions-inner-container {
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 30px;
+
+}
+
+.solutions-section-heading {
+    font-size: 36px; 
+    color: #0A49AF;
+}
+
+.card {
+    height: 350px;
+    width: 325px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px #00000026;
+    
+}
+
+.card img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-head {
+    height: 180px;
+}
+
+.card-body {
+    text-align: left;
+    margin: 20px
+}
+
+.card-body p{
+    font-size: 16px;
+    color: #191919cc;
+}
+
+.card-body-heading {
+    font-size: 18px;
+    color: #0E5FE3;
+}
+
+/* ==========[ SOLUTIONS SECTION MEDIA QUERIES ]=============== */
+
+@media screen and (max-width: 500px){
+    .solutions-outer-container{
+        width: 100%;
+    }
+
+    .solutions-inner-container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .card {
+        margin-top: 24px;
+        margin: 20px auto;
+    }
+
+    .card {
+        z-index: 3;
+    }
+}
+    
+/* =====================[ SHARING SECTION STYLES ]==================================================== */
+
+
+.share-documents-container {
+    background: #F5F6F7;
+    max-height: 560px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito Sans', sans-serif; /* Font */
+}
+
+.share-inner-container {
+    width: 80%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-inner-left-div{
+    width: 445px;
+    margin: 0 150px 0 0;
+    letter-spacing: 0.08px;
+    line-height: 24px;
+    color: #191919CC;
+}
+
+.share-inner-right-div {
+    width: 430px;
+   
+}
+
+.blue-section-heading {
+    font-size: 36px; 
+    color: #0A49AF;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* ==========[ SHARE SECTION MEDIA QUERIES ]=============== */
+
+@media screen and (max-width: 500px){
+    .share-documents-container {
+        max-height: 100%;
+        align-items: center;
+        
+    }
+    .share-inner-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .share-inner-right-div{
+        width: 100%;
+        justify-content: center;
+    }
+    .share-inner-left-div{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+        line-height: 22px;
+    }
+    .blue-section-heading {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+     
+}
+
+/* =====================[ DOCUSIGN SECTION STYLES ]==================================================== */
+
+
+.sign-Doc-con {
+    background: #FFF;
+    max-height: 750px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #191919CC;
+    margin: 50px 0;
+}
+
+.sign-Doc-inn-con {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.docuSign-inner-left-div {
+   display: flex;
+   justify-content: center;
+   margin-right: -80px;
+}
+
+.docuSign-inner-right-div p{
+    line-height: 24px;
+    letter-spacing: 0.08px;
+    max-width: 450px; 
+}
+
+footer {
+    height: 150px;
+    background-color: #191919;
+}
+
+.hide-on-desktop {
+    display: none;
+}
+
+/* ==========[ DOCU SECTION MEDIA QUERIES ]=============== */
+@media screen and (max-width: 500px){
+    .sign-Doc-inn-con {
+        flex-direction: column;
+        
+    }
+
+    .docuSign-inner-left-div{
+        margin: 0 auto;
+        margin-bottom: 45px;
+        width: 100%;
+    }
+
+    .docuSign-inner-left-div img {
+        width: 100%;
+    }
+
+    .hide-on-phone {
+        display: none;
+    }
+
+    .hide-on-desktop {
+        display: inline;
+    }
+
+    footer {
+        height: 100px;
+        
+    }
+
+}

@@ -9,11 +9,6 @@
     overscroll-behavior: none;
 }
 
-.container {
-    /* min-width: 100%; */
-    /* margin: 0 auto; */
-}
-
 /* =====================[ HEADER STYLES ]==================================================== */
 
 .hide-on-phone, .navbar {
@@ -27,7 +22,7 @@
     position: fixed;
     top: 0;
     padding: 15px 20px;
-    z-index: 3;
+    z-index: 10;
 }
 
 .navbar ul {
@@ -66,7 +61,7 @@
     transition: ease-out 0.3s;
     cursor: pointer;
     font-weight: bold;
-    z-index: 3;
+    z-index: 6;
 }
 
 .button-light:hover{
@@ -104,7 +99,6 @@
 
     .navbar img {
         width: 200px;
-        
     }
 
     ion-icon {
@@ -201,6 +195,7 @@ header {
         height: 60px;
         font-size: 16px;
         font-weight: bold;
+        
     }
 
     .header-inner-left-div button{
@@ -286,7 +281,7 @@ header {
     }
 
     .card {
-        z-index: 3;
+        z-index: 10;
     }
 }
     
